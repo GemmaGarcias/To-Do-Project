@@ -1,0 +1,34 @@
+body {
+	background-color: #fffba7;
+}
+
+.myButtonDelete{
+	float:right;
+	margin-right:6px;
+}
+
+.myButtonDone{
+	float:right;
+	margin-right:6px;
+}
+
+.pencil{
+	float:left;
+	margin-right: 6px;
+}
+.pencil:hover {
+	cursor:pointer;
+}
+
+.buttonGroup{
+	float:right;
+	margin-left: 60px;
+}
+
+.listCompleted{
+	text-decoration: line-through;
+}
+
+small{
+	margin-left: 10px;
+}

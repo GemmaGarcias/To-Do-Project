@@ -1,0 +1,24 @@
+extends layout/index
+
+block content
+  .row
+    .col-md-6.col-md-offset-3
+      h1 TODO LIST
+      .btn-group.buttonGroup(role='group', aria-label='...')
+        button.btn.btn-success.allDone(type='button') All Done!
+        button.btn.btn-danger.deleteAll(type='button') Delete All
+      //-Creamos un input con el name y este name        
+      form(action='/new', method='POST', role='form')
+        |Welcome add a task
+        .input-group
+            input.form-control(type='task', autofocus, name='nameTask', id='task', placeholder='New task...')
+            span.input-group-btn
+              button.btn.btn-default(type='submit') Add!
+      ul.list-group
+        each task in allTasksGet
+            li.list-group-item= task.taskName
+              small= moment(task.createdAt).format('MMMM Do YYYY, h:mm:ss a')
+              a.pencil(action='/edit' data-id=task.id)
+                span.glyphicon.glyphicon-pencil(aria-hidden='true')
+              button.btn.btn-danger.btn-xs.myButtonDelete(data-id=task.id) X
+              button.btn.btn-success.btn-xs.myButtonDone(data-id=task.id) Done!

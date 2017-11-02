@@ -1,0 +1,28 @@
+//ya no lo uso
+
+[
+  {
+    "id": 1,
+    "taskName": "Buy bread",
+    "completed": true,
+    "createdAt": 1509376585671
+  },
+  {
+    "id": 2,
+    "taskName": "Sell furniture",
+    "completed": false,
+    "createdAt":1509376585671
+  },
+  {
+    "id": 3,
+    "taskName": "Beer",
+    "completed": false,
+    "createdAt":1509376585671
+  },
+  {
+    "id": 4,
+    "taskName": "Help My Kickstarter",
+    "completed": false,
+    "createdAt":1509376585671
+  }
+]

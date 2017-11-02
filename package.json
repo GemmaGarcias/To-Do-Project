@@ -1,0 +1,26 @@
+{
+  "name": "To-Do",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.1",
+    "pug": "^2.0.0-rc.4",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "devtools": "0.0.0",
+    "nodemon": "^1.12.1"
+  }
+}

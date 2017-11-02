@@ -1,0 +1,10 @@
+extends layout/index
+
+block content
+  .row
+    .col-md-6.col-md-offset-3
+      h1 TODO LIST
+      h2 Tasks completed!
+      ul.list-group
+        each task in allTasksCompleted
+          li.list-group-item.listCompleted= task.taskName
